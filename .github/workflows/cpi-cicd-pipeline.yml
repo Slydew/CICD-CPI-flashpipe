@@ -12,7 +12,7 @@ jobs:
     container:
       image: engswee/flashpipe:2.x.x 
     env:
-      HOST_TMN: p700034-tmn.hci.eu2.hana.ondemand.com
+      HOST_TMN: ${{ secrets.NEO_HOST_TMN }}
       BASIC_USERID: ${{ secrets.NEO_USER_ID }}
       BASIC_PASSWORD: ${{ secrets.NEO_PASSWORD }}
       PACKAGE_ID: FlashPipeDemo
